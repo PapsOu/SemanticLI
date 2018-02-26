@@ -1,0 +1,10 @@
+semantic-ui/*
+
+node_modules/*
+
+dist/themes/*
+dist/components/*
+dist/components/semantic.css
+dist/components/semantic.min.css
+
+site/*

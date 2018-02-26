@@ -31,6 +31,27 @@ pre .code {
   color: @gray !important;
 }
 
+.ui.table a:not(.button) {
+    text-decoration: none !important;
+}
+
+.ui.vertical.menu > .item:first-child,
+body.pushable,
+body.pushable .pusher {
+    background-color: @pageBackground;
+}
+
+.ui.left.visible.sidebar,
+.ui.right.visible.sidebar {
+    box-shadow: 0 1px 2px 0 darken(@pageBackground, 30%) !important;
+    z-index: 10;
+}
+
+.ui.divider:not(.vertical):not(.horizontal) {
+    border-top   : 1px solid rgba(0, 0, 0, 0.3) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 @font-face {
     font-family  : 'Raleway';
     font-style   : normal;

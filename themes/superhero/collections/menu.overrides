@@ -1,7 +1,18 @@
 .ui.menu {
   font-size: 12px !important;
-  
+
   i.icon {
     color: @gray-lighter;
   }
+}
+
+
+.ui.tabular.menu {
+    position: relative;
+    z-index : 1;
+
+    .active.item {
+        background         : @gray-light;
+        border-bottom-color: transparent;
+    }
 }

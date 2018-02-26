@@ -33,8 +33,6 @@ var gulp = require('gulp-help')(require('gulp')),
     buildRTL = require('./semantic-ui/tasks/rtl/build'),
     watchRTL = require('./semantic-ui/tasks/rtl/watch');
 
-var targetTheme = 'dark';
-
 /*******************************
              Tasks
 *******************************/
@@ -56,8 +54,14 @@ gulp.task('build-javascript', 'Builds all javascript from source', buildJS);
 gulp.task('build-css', 'Builds all css from source', buildCSS);
 gulp.task('build-assets', 'Copies all assets from source', buildAssets);
 
-gulp.task('build-dark', 'Build LI dark theme', ['cp-dark', 'build']);
-gulp.task('build-default', 'Build LI default theme', ['cp', 'build']);
+gulp.task('build-dark', 'Build LI dark theme', ['cp-dark', 'build'], function() {
+    gulp.src('dist/semantic.css').pipe(rename('semantic-superhero.css')).pipe(gulp.dest('./dist'));
+    gulp.src('dist/semantic.min.css').pipe(rename('semantic-superhero.min.css')).pipe(gulp.dest('./dist'));
+});
+gulp.task('build-default', 'Build LI default theme', ['cp', 'build'], function() {
+    gulp.src('dist/semantic.css').pipe(rename('semantic-librinfo.css')).pipe(gulp.dest('./dist'));
+    gulp.src('dist/semantic.min.css').pipe(rename('semantic-librinfo.min.css')).pipe(gulp.dest('./dist'));
+});
 
 gulp.task('clean', 'Clean dist folder', clean);
 gulp.task('version', 'Displays current version of Semantic', version);

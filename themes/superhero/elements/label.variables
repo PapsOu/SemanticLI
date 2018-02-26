@@ -4,3 +4,4 @@
 @labelHoverBackgroundColor: @gray;
 @labelHoverTextColor: white;
 @ribbonShadowColor: darken(@gray-light, 5%);
+@basicBackground: transparent;

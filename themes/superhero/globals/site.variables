@@ -5,7 +5,8 @@
 @gray-light:             #4E5D6C;   // #999
 @gray-lighter:           #EBEBEB; // #eee
 
-@primaryColor:         #DF691A;
+@primaryColor:         #3C8DBC;
+@secondaryColor:       #065D79;
 @positiveColor:        #5cb85c;
 @infoColor:            #5bc0de;
 @warningColor:         #f0ad4e;
@@ -13,7 +14,7 @@
 
 @pageBackground: #2B3E50;
 @textColor: #fff;
-@linkColor: #df691a;
+@linkColor: @primaryColor;
 @linkHoverColor: @linkColor;
 @emSize: 15px;
 @fontSize: 15px;
@@ -63,3 +64,18 @@
 
 @fontName: 'Raleway';
 @fontPath: '/fonts';
+
+@red              : #DB2828;
+@orange           : #F2711C;
+@yellow           : #FBBD08;
+@olive            : #B5CC18;
+@green            : #66bb6a;
+@teal             : #00B5AD;
+@blue             : #3C8DBC;
+@violet           : #6435C9;
+@purple           : #A333C8;
+@pink             : #E03997;
+@brown            : #A5673F;
+@grey             : #767676;
+@black            : #1B1C1D;
+@white            : #FFFFFF;

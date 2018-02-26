@@ -2,9 +2,9 @@ semantic-ui/*
 
 node_modules/*
 
+dist/semantic.css
+dist/semantic.min.css
 dist/themes/*
 dist/components/*
-dist/components/semantic.css
-dist/components/semantic.min.css
 
 site/*

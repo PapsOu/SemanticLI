@@ -29436,6 +29436,14 @@ a.ui.card:hover,
 .plus:before { content: '\e802'; }
 */
 
+.ui.toggle.checkbox .box::before,
+.ui.toggle.checkbox label::before {
+  background: #2B3E50;
+  border-color: rgba(0, 0, 0, 0.3) !important;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3) inset !important;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3) inset !important;
+}
+
 /*******************************
          Site Overrides
 *******************************/

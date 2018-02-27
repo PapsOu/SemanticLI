@@ -339,6 +339,10 @@ body {
   font-family: 'Raleway', 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 
+.ui.readonly {
+  pointer-events: none;
+}
+
 /*******************************
          Site Overrides
 *******************************/
@@ -12423,7 +12427,8 @@ img.ui.bordered.image {
 .ui.form input[type="tel"],
 .ui.form input[type="text"],
 .ui.form input[type="time"],
-.ui.form input[type="url"] {
+.ui.form input[type="url"],
+.ui.input > input {
   background: #2B3E50 !important;
   color: #E6ECF2 !important;
   border-color: rgba(0, 0, 0, 0.3) !important;
@@ -12442,8 +12447,13 @@ img.ui.bordered.image {
 .ui.form input[type="tel"]:focus,
 .ui.form input[type="text"]:focus,
 .ui.form input[type="time"]:focus,
-.ui.form input[type="url"]:focus {
+.ui.form input[type="url"]:focus,
+.ui.input > input:focus {
   border-color: #3C8DBC !important;
+}
+
+.ui.input > input {
+  line-height: 1.9em;
 }
 
 /*******************************
@@ -16762,9 +16772,9 @@ ol.ui.horizontal.list li:before,
   background: '';
   -webkit-box-shadow: 0 1px 2px 0 #222;
   box-shadow: 0 1px 2px 0 #222;
-  line-height: 1.13333333em;
+  line-height: 0.7em;
   border-radius: 0;
-  border: 1px solid #555555;
+  border: 0px none;
 }
 
 /* First Steps */
@@ -16811,8 +16821,8 @@ ol.ui.horizontal.list li:before,
   -webkit-box-shadow: none;
   box-shadow: none;
   border-radius: 0em;
-  border: none;
-  border-right: 1px solid #555555;
+  border: 0px solid transparent;
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: background-color 0.1s ease, opacity 0.1s ease, color 0.1s ease, -webkit-box-shadow 0.1s ease;
   transition: background-color 0.1s ease, opacity 0.1s ease, color 0.1s ease, -webkit-box-shadow 0.1s ease;
   transition: background-color 0.1s ease, opacity 0.1s ease, color 0.1s ease, box-shadow 0.1s ease;
@@ -16833,7 +16843,7 @@ ol.ui.horizontal.list li:before,
   width: 1.13333333em;
   height: 1.13333333em;
   border-style: solid;
-  border-color: #555555;
+  border-color: rgba(0, 0, 0, 0.3);
   border-width: 0px 1px 1px 0px;
   -webkit-transition: background-color 0.1s ease, opacity 0.1s ease, color 0.1s ease, -webkit-box-shadow 0.1s ease;
   transition: background-color 0.1s ease, opacity 0.1s ease, color 0.1s ease, -webkit-box-shadow 0.1s ease;
@@ -16990,7 +17000,7 @@ ol.ui.horizontal.list li:before,
   border-radius: 0em;
   padding: 1.13333333em 2em;
   border-right: none;
-  border-bottom: 1px solid #555555;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .ui.vertical.steps .step:first-child {
@@ -17402,10 +17412,6 @@ ol.ui.horizontal.list li:before,
 .ui.massive.steps .step,
 .ui.massive.step {
   font-size: 1.73333333rem;
-}
-
-.ui.steps .step.active {
-  border: none !important;
 }
 
 /*******************************

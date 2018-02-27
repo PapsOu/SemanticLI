@@ -1,14 +1,20 @@
-@backgroundColor: lighten(@pageBackground, 5%);
+@backgroundColor:       lighten(@pageBackground, 5%);
 
-@titleColor: @gray-lighter;
-@descriptionColor: darken(@gray-lighter, 10%);
+@titleColor:            @gray-lighter;
+@descriptionColor:      darken(@gray-lighter, 10%);
 
-@activeBackground: darken(@pageBackground, 5%);
-@activeColor: @white;
-@hoverBackground: darken(@pageBackground, 10%);
+@activeBackground:      darken(@pageBackground, 5%);
+@activeColor:           @white;
+@hoverBackground:       darken(@pageBackground, 10%);
 @activeHoverBackground: darken(@pageBackground, 10%);
 
-@disabledColor: darken(@white, 30%);
-@disabledBackground: @gray;
-@stepsBoxShadow: 0 1px 2px 0 #222;
-@border: none;
+@disabledColor:         darken(@white, 30%);
+@disabledBackground:    @gray;
+@stepsBoxShadow:        0 1px 2px 0 #222;
+
+@border:                0px solid transparent;
+@stepsBorder:           0px none;
+@divider:               1px solid rgba(0,0,0,0.3);
+@borderColor:           rgba(0,0,0,0.3);
+
+@lineHeight:            0.7em;

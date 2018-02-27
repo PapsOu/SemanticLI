@@ -71,3 +71,8 @@ body.pushable .pusher {
 body {
     font-family: 'Raleway','Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
+
+
+.ui.readonly {
+    pointer-events: none;
+}

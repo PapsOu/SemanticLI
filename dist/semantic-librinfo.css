@@ -30833,6 +30833,11 @@ select.ui.dropdown {
   box-shadow: -1px -1px 0px 0px rgba(34, 36, 38, 0.15);
 }
 
+.ui.default.dropdown:not(.button) > .text,
+.ui.dropdown:not(.button) > .default.text {
+  color: #1B1C1D !important;
+}
+
 /*******************************
         User Overrides
 *******************************/

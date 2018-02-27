@@ -16760,8 +16760,8 @@ ol.ui.horizontal.list li:before,
   align-items: stretch;
   margin: 1em 0em;
   background: '';
-  -webkit-box-shadow: none;
-  box-shadow: none;
+  -webkit-box-shadow: 0 1px 2px 0 #222;
+  box-shadow: 0 1px 2px 0 #222;
   line-height: 1.13333333em;
   border-radius: 0;
   border: 1px solid #555555;
@@ -17402,6 +17402,10 @@ ol.ui.horizontal.list li:before,
 .ui.massive.steps .step,
 .ui.massive.step {
   font-size: 1.73333333rem;
+}
+
+.ui.steps .step.active {
+  border: none !important;
 }
 
 /*******************************

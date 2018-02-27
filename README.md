@@ -26,7 +26,7 @@ Output files are :
 - dist/semantic.js
 - dist/semantic.min.js
 
-### Build dark theme
+### Build default theme
 
 ```bash
 gulp build-default

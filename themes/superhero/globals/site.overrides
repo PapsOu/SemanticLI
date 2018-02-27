@@ -73,6 +73,7 @@ body {
 }
 
 
-.ui.readonly {
+.ui.readonly,
+.field .readonly {
     pointer-events: none;
 }

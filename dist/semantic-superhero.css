@@ -339,7 +339,8 @@ body {
   font-family: 'Raleway', 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 
-.ui.readonly {
+.ui.readonly,
+.field .readonly {
   pointer-events: none;
 }
 

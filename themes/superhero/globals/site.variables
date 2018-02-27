@@ -13,6 +13,7 @@
 @negativeColor:        #d9534f;
 
 @pageBackground: #2B3E50;
+@pageBackgroundDarken: #22313F;
 @textColor: #fff;
 @linkColor: @primaryColor;
 @linkHoverColor: @linkColor;

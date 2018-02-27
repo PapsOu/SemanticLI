@@ -16,3 +16,37 @@
 .ui.selection.dropdown .menu > .item {
     border-top: 1px solid rgba(0,0,0,0.3) !important;
 }
+
+.ui.form input:not([type]),
+.ui.form input[type="date"],
+.ui.form input[type="datetime-local"],
+.ui.form input[type="email"],
+.ui.form input[type="file"],
+.ui.form input[type="number"],
+.ui.form input[type="password"],
+.ui.form input[type="search"],
+.ui.form input[type="tel"],
+.ui.form input[type="text"],
+.ui.form input[type="time"],
+.ui.form input[type="url"] {
+    background: @pageBackground !important;
+    color: #E6ECF2 !important;
+    border-color: rgba(0,0,0,0.3) !important;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.3) inset !important;
+}
+
+
+.ui.form input:not([type]):focus,
+.ui.form input[type="date"]:focus,
+.ui.form input[type="datetime-local"]:focus,
+.ui.form input[type="email"]:focus,
+.ui.form input[type="file"]:focus,
+.ui.form input[type="number"]:focus,
+.ui.form input[type="password"]:focus,
+.ui.form input[type="search"]:focus,
+.ui.form input[type="tel"]:focus,
+.ui.form input[type="text"]:focus,
+.ui.form input[type="time"]:focus,
+.ui.form input[type="url"]:focus {
+    border-color: @primaryColor !important;
+}

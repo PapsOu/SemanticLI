@@ -12,3 +12,55 @@
 .ui.active.search.dropdown input.search:focus + .text {
   color: @gray-base !important;
 }
+
+.ui.selection.dropdown {
+    line-height: 1.5em;
+    background: @pageBackground !important;
+    color: #E6ECF2 !important;
+    border-color: rgba(0,0,0,0.3) !important;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.3) inset !important;
+}
+
+.ui.selection.active.dropdown:hover {
+    border-color: @primaryColor !important;
+}
+
+.ui.selection.dropdown > .delete.icon,
+.ui.selection.dropdown > .dropdown.icon,
+.ui.selection.dropdown > .search.icon {
+    line-height: 2em;
+}
+
+.ui.default.dropdown:not(.button) > .text,
+.ui.dropdown:not(.button) > .default.text,
+.ui.selection.visible.dropdown > .text:not(.default) {
+    color: #E6ECF2;
+}
+
+.ui.selection.active.dropdown {
+    border-top: 1px solid @primaryColor !important;
+    border-left: 1px solid @primaryColor !important;
+    border-right: 1px solid @primaryColor !important;
+    border-bottom: 1px solid rgba(0,0,0,0.3) !important;
+}
+
+.ui.selection.active.dropdown .menu,
+.ui.selection.active.dropdown .menu:hover,
+.ui.selection.active.dropdown:hover .menu {
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.3) !important;
+    border-bottom: 1px solid @primaryColor !important;
+    border-left: 1px solid @primaryColor !important;
+    border-right: 1px solid @primaryColor !important;
+    border-top: none !important;
+}
+
+.ui.dropdown .menu {
+    background: @pageBackground !important;
+    color: #E6ECF2 !important;
+}
+
+.ui.dropdown .menu > .item:hover,
+.ui.dropdown .menu > .item.selected {
+    background: @primaryColor !important;
+    color: #E6ECF2 !important;
+}

@@ -12430,6 +12430,7 @@ img.ui.bordered.image {
 .ui.form input[type="text"],
 .ui.form input[type="time"],
 .ui.form input[type="url"],
+.ui.form textarea,
 .ui.input > input {
   background: #2B3E50 !important;
   color: #E6ECF2 !important;
@@ -12450,6 +12451,7 @@ img.ui.bordered.image {
 .ui.form input[type="text"]:focus,
 .ui.form input[type="time"]:focus,
 .ui.form input[type="url"]:focus,
+.ui.form textarea:focus,
 .ui.input > input:focus {
   border-color: #3C8DBC !important;
 }
@@ -12469,115 +12471,71 @@ img.ui.bordered.image {
 .ui.form .error input[type="tel"],
 .ui.form .error input[type="text"],
 .ui.form .error input[type="time"],
-.ui.form .error input[type="url"] {
+.ui.form .error textarea {
   border-color: #d9534f !important;
 }
 
+.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input:not([type])::-webkit-input-placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="date"]::-webkit-input-placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="datetime-local"]::-webkit-input-placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="email"]::-webkit-input-placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="file"]::-webkit-input-placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="number"]::-webkit-input-placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="password"]::-webkit-input-placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="search"]::-webkit-input-placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="tel"]::-webkit-input-placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="text"]::-webkit-input-placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="time"]::-webkit-input-placeholder,
-.ui.form .error .ui.input > .icon,
-.ui.form .error .ui.input > input[type="url"]::-webkit-input-placeholder,
-.ui.form .error .ui.input > .icon {
+.ui.form .error .ui.input > input[type="url"]::-webkit-input-placeholder .ui.form .error .ui.input > textarea::-webkit-input-placeholder {
   color: #d9534f !important;
 }
 
+.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input:not([type]):-ms-input-placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="date"]:-ms-input-placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="datetime-local"]:-ms-input-placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="email"]:-ms-input-placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="file"]:-ms-input-placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="number"]:-ms-input-placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="password"]:-ms-input-placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="search"]:-ms-input-placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="tel"]:-ms-input-placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="text"]:-ms-input-placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="time"]:-ms-input-placeholder,
-.ui.form .error .ui.input > .icon,
-.ui.form .error .ui.input > input[type="url"]:-ms-input-placeholder,
-.ui.form .error .ui.input > .icon {
+.ui.form .error .ui.input > input[type="url"]:-ms-input-placeholder .ui.form .error .ui.input > textarea:-ms-input-placeholder {
   color: #d9534f !important;
 }
 
+.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input:not([type])::-ms-input-placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="date"]::-ms-input-placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="datetime-local"]::-ms-input-placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="email"]::-ms-input-placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="file"]::-ms-input-placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="number"]::-ms-input-placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="password"]::-ms-input-placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="search"]::-ms-input-placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="tel"]::-ms-input-placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="text"]::-ms-input-placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="time"]::-ms-input-placeholder,
-.ui.form .error .ui.input > .icon,
-.ui.form .error .ui.input > input[type="url"]::-ms-input-placeholder,
-.ui.form .error .ui.input > .icon {
+.ui.form .error .ui.input > input[type="url"]::-ms-input-placeholder .ui.form .error .ui.input > textarea::-ms-input-placeholder {
   color: #d9534f !important;
 }
 
+.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input:not([type])::placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="date"]::placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="datetime-local"]::placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="email"]::placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="file"]::placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="number"]::placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="password"]::placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="search"]::placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="tel"]::placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="text"]::placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="time"]::placeholder,
-.ui.form .error .ui.input > .icon,
-.ui.form .error .ui.input > input[type="url"]::placeholder,
-.ui.form .error .ui.input > .icon {
+.ui.form .error .ui.input > input[type="url"]::placeholder .ui.form .error .ui.input > textarea::placeholder {
   color: #d9534f !important;
 }
 

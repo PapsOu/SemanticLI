@@ -29,6 +29,7 @@
 .ui.form input[type="text"],
 .ui.form input[type="time"],
 .ui.form input[type="url"],
+.ui.form textarea,
 .ui.input > input {
     background: @pageBackground !important;
     color: #E6ECF2 !important;
@@ -49,6 +50,7 @@
 .ui.form input[type="text"]:focus,
 .ui.form input[type="time"]:focus,
 .ui.form input[type="url"]:focus,
+.ui.form textarea:focus,
 .ui.input > input:focus {
     border-color: @primaryColor !important;
 }
@@ -69,34 +71,24 @@
 .ui.form .error input[type="tel"],
 .ui.form .error input[type="text"],
 .ui.form .error input[type="time"],
-.ui.form .error input[type="url"] {
+.ui.form .error textarea {
     border-color: @negativeColor !important;
 }
 
+.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input:not([type])::placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="date"]::placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="datetime-local"]::placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="email"]::placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="file"]::placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="number"]::placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="password"]::placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="search"]::placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="tel"]::placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="text"]::placeholder,
-.ui.form .error .ui.input > .icon,
 .ui.form .error .ui.input > input[type="time"]::placeholder,
-.ui.form .error .ui.input > .icon,
-.ui.form .error .ui.input > input[type="url"]::placeholder,
-.ui.form .error .ui.input > .icon,
+.ui.form .error .ui.input > input[type="url"]::placeholder
+.ui.form .error .ui.input > textarea::placeholder
 {
     color: @negativeColor !important;
 }

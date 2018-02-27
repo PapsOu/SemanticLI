@@ -22,3 +22,7 @@ body {
 .field .readonly {
     pointer-events: none;
 }
+
+.ui.form ::placeholder {
+    color: @black !important;
+}

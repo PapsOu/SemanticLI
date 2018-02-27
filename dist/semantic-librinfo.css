@@ -289,6 +289,22 @@ body {
   pointer-events: none;
 }
 
+.ui.form ::-webkit-input-placeholder {
+  color: #1B1C1D !important;
+}
+
+.ui.form :-ms-input-placeholder {
+  color: #1B1C1D !important;
+}
+
+.ui.form ::-ms-input-placeholder {
+  color: #1B1C1D !important;
+}
+
+.ui.form ::placeholder {
+  color: #1B1C1D !important;
+}
+
 /*******************************
          Site Overrides
 *******************************/

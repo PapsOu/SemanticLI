@@ -64,3 +64,10 @@
     background: @primaryColor !important;
     color: #E6ECF2 !important;
 }
+
+.ui.dropdown,
+.ui.floating.dropdown {
+    & > .menu {
+        box-shadow: 0 1px 2px 0 rgba(0,0,0,0.3) !important;
+    }
+}

@@ -29403,6 +29403,19 @@ a.ui.card:hover,
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3) inset !important;
 }
 
+.ui.checkbox .box::before,
+.ui.checkbox label::before {
+  background: #22313F !important;
+  border-color: #22313F !important;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3) inset !important;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3) inset !important;
+}
+
+.ui.checkbox input:checked ~ .box::after,
+.ui.checkbox input:checked ~ label::after {
+  color: #FFFFFF !important;
+}
+
 /*******************************
          Site Overrides
 *******************************/

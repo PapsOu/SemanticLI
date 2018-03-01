@@ -6,11 +6,11 @@
 .ui.dropdown .menu,
 .ui.dropdown .item,
 .ui.dropdown .menu .item {
-  font-size: 12px !important;
+  // font-size: 12px !important;
 }
 
 .ui.active.search.dropdown input.search:focus + .text {
-  color: @gray-base !important;
+    color: @gray-base !important;
 }
 
 .ui.selection.dropdown {
@@ -19,6 +19,8 @@
     color: #E6ECF2 !important;
     border-color: rgba(0,0,0,0.3) !important;
     box-shadow: 0 1px 2px 0 rgba(0,0,0,0.3) inset !important;
+    padding: .4em 2em .4em .85em !important;
+    min-height: 2.61em !important;
 }
 
 .ui.selection.active.dropdown:hover {
@@ -29,6 +31,7 @@
 .ui.selection.dropdown > .dropdown.icon,
 .ui.selection.dropdown > .search.icon {
     line-height: 2em;
+    top: 0.4em !important;
 }
 
 .ui.default.dropdown:not(.button) > .text,

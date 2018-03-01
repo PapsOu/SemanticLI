@@ -16,6 +16,15 @@
 
 body, * {
     font-family: 'Raleway','Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+
+
+    .ui.accordion.menu .item .title:not(.active) > .dropdown.icon {
+        transform: rotate(90deg);
+    }
+
+    .ui.accordion.menu .item .title.active > .dropdown.icon {
+        transform: rotate(0deg);
+    }
 }
 
 .ui.readonly,

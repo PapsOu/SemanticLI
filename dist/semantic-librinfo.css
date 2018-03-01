@@ -285,6 +285,18 @@ body,
   font-family: 'Raleway', 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 
+body .ui.accordion.menu .item .title:not(.active) > .dropdown.icon,
+* .ui.accordion.menu .item .title:not(.active) > .dropdown.icon {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+body .ui.accordion.menu .item .title.active > .dropdown.icon,
+* .ui.accordion.menu .item .title.active > .dropdown.icon {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
 .ui.readonly,
 .field .readonly {
   pointer-events: none;

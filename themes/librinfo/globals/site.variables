@@ -17,6 +17,6 @@
 @white            : #FFFFFF;
 
 @fontName         : 'Raleway';
-@fontPath         : '/fonts';
+@fontPath         : '/bundles/blastui/fonts';
 
 @pageFont          : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;

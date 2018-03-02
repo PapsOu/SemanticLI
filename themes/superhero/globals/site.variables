@@ -64,7 +64,7 @@
 @inputPlaceholderColor: lighten(@gray-light, 30%);
 
 @fontName: 'Raleway';
-@fontPath: '/fonts';
+@fontPath: '/bundles/blastui/fonts';
 
 @red              : #DB2828;
 @orange           : #F2711C;

@@ -1,3 +1,5 @@
+@import '../../../definitions/modules/range';
+
 @font-face {
     font-family  : 'Raleway';
     font-style   : normal;

@@ -1,3 +1,5 @@
+@import '../../../definitions/modules/range';
+
 .text.primary,
 .text.primary:hover {
   color: @primaryColor;
@@ -52,7 +54,7 @@ body.pushable .pusher {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-@font-face {
+@font-face {gul
     font-family  : 'Raleway';
     font-style   : normal;
     font-weight  : 400;
@@ -77,6 +79,12 @@ body, * {
 
     .ui.accordion.menu .item .title.active > .dropdown.icon {
         transform: rotate(0deg);
+    }
+
+    .ui.form .error.message,
+    .ui.form .success.message,
+    .ui.form .warning.message {
+        display: inherit;
     }
 }
 

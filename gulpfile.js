@@ -31,7 +31,11 @@ var gulp = require('gulp-help')(require('gulp')),
 
     // rtl
     buildRTL = require('./semantic-ui/tasks/rtl/build'),
-    watchRTL = require('./semantic-ui/tasks/rtl/watch');
+    watchRTL = require('./semantic-ui/tasks/rtl/watch'),
+
+    customModules = require('./tasks/build-custom-modules');
+
+require('./tasks/internals')(gulp);
 
 /*******************************
              Tasks
@@ -42,23 +46,30 @@ gulp.task('default', false, ['check-install']);
 gulp.task('watch', 'Watch for site/theme changes', watch);
 
 gulp.task('cp', 'Move config to semantic ui', function() {
-    return gulp.src('librinfo.theme.config').pipe(rename('theme.config')).pipe(gulp.dest('./semantic-ui/src'));
+    gulp.src('librinfo.theme.config').pipe(rename('theme.config')).pipe(gulp.dest('./semantic-ui/src'));
 });
 
 gulp.task('cp-dark', 'Move config to semantic ui', function() {
-    return gulp.src('librinfo-dark.theme.config').pipe(rename('theme.config')).pipe(gulp.dest('./semantic-ui/src'));
+    gulp.src('librinfo-dark.theme.config').pipe(rename('theme.config')).pipe(gulp.dest('./semantic-ui/src'));
 });
 
 gulp.task('build', 'Builds all files from source', build);
-gulp.task('build-javascript', 'Builds all javascript from source', buildJS);
+
+gulp.task('build-custom-modules', 'Builds all custom js modules', customModules);
+
+gulp.task('build-javascript', 'Builds all javascript from source', ['build-custom-modules'], buildJS);
 gulp.task('build-css', 'Builds all css from source', buildCSS);
 gulp.task('build-assets', 'Copies all assets from source', buildAssets);
 
-gulp.task('build-dark', 'Build LI dark theme', ['cp-dark', 'build'], function() {
+gulp.task('build-dark', 'Build LI dark theme', [
+    'cp-dark', 'build'
+], function() {
     gulp.src('dist/semantic.css').pipe(rename('semantic-superhero.css')).pipe(gulp.dest('./dist'));
     gulp.src('dist/semantic.min.css').pipe(rename('semantic-superhero.min.css')).pipe(gulp.dest('./dist'));
 });
-gulp.task('build-default', 'Build LI default theme', ['cp', 'build'], function() {
+gulp.task('build-default', 'Build LI default theme', [
+    'cp', 'build'
+], function() {
     gulp.src('dist/semantic.css').pipe(rename('semantic-librinfo.css')).pipe(gulp.dest('./dist'));
     gulp.src('dist/semantic.min.css').pipe(rename('semantic-librinfo.min.css')).pipe(gulp.dest('./dist'));
 });

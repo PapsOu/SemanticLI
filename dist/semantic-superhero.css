@@ -264,7 +264,7 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 
 /*!
  * # Range slider for Semantic UI.
- * 
+ *
  */
 
 .ui.range {
@@ -303,7 +303,7 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
   border-radius: 4px;
   top: 9px;
   left: 0;
-  background-color: #1b1c1d;
+  background-color: #3C8DBC;
 }
 
 .ui.inverted.range .inner .track-fill {

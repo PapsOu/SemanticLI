@@ -6,5 +6,6 @@ dist/semantic.css
 dist/semantic.min.css
 dist/themes/*
 dist/components/*
+dist/custom-components/*
 
 site/*

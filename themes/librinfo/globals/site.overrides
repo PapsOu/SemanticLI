@@ -1,4 +1,5 @@
-@import '../../../definitions/modules/range';
+@import '../../../definitions/modules/range/range';
+@import '../../../definitions/modules/datetimepicker/flatpickr';
 
 @font-face {
     font-family  : 'Raleway';

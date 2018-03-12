@@ -1,5 +1,5 @@
 @import '../../../definitions/modules/range/range';
-@import '../../../definitions/modules/datetimepicker/flatpickr';
+@import '../../../definitions/modules/datetimepicker/flatpickr-dark';
 
 .text.primary,
 .text.primary:hover {

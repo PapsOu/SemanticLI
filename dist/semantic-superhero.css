@@ -1364,6 +1364,93 @@ span.flatpickr-day.today {
   border-right: 0;
 }
 
+body .flatpickr-calendar {
+  background: #2B3E50;
+  -webkit-box-shadow: 0 1px 2px 0 #000000;
+  box-shadow: 0 1px 2px 0 #000000;
+}
+
+body .flatpickr-day.disabled,
+body .flatpickr-day.disabled:hover,
+body .flatpickr-day.nextMonthDay,
+body .flatpickr-day.notAllowed,
+body .flatpickr-day.notAllowed.nextMonthDay,
+body .flatpickr-day.notAllowed.prevMonthDay,
+body .flatpickr-day.prevMonthDay {
+  color: #4E5D6C;
+}
+
+body .flatpickr-month,
+body .flatpickr-time .flatpickr-am-pm,
+body .flatpickr-time .flatpickr-time-separator,
+body .flatpickr-time input,
+body span.flatpickr-weekday {
+  color: #fff;
+}
+
+body .flatpickr-day {
+  background: #4E5D6C;
+  color: #fff;
+  border: none;
+}
+
+body .flatpickr-weekdays {
+  border-bottom: 1px solid #22313F;
+}
+
+body .flatpickr-calendar.showTimeInput.hasTime .flatpickr-time {
+  border-top: 1px solid #22313F;
+}
+
+body .flatpickr-day.nextMonthDay,
+body .flatpickr-day.prevMonthDay {
+  border-color: #22313F;
+  border: none;
+}
+
+body .flatpickr-day.inRange,
+body .flatpickr-day.nextMonthDay.inRange,
+body .flatpickr-day.nextMonthDay.today.inRange,
+body .flatpickr-day.nextMonthDay:focus,
+body .flatpickr-day.nextMonthDay:hover,
+body .flatpickr-day.prevMonthDay.inRange,
+body .flatpickr-day.prevMonthDay.today.inRange,
+body .flatpickr-day.prevMonthDay:focus,
+body .flatpickr-day.prevMonthDay:hover,
+body .flatpickr-day.today.inRange,
+body .flatpickr-day:focus,
+body .flatpickr-day:hover {
+  background-color: #3C8DBC;
+  color: #FFFFFF;
+  border: none;
+}
+
+body span.flatpickr-day.nextMonthDay.today:not(.selected),
+body span.flatpickr-day.prevMonthDay.today:not(.selected),
+body span.flatpickr-day.today:not(.selected) {
+  background-color: #065D79;
+  color: #FFFFFF;
+  border: none;
+}
+
+body span.flatpickr-day.nextMonthDay.today:not(.selected):focus,
+body span.flatpickr-day.prevMonthDay.today:not(.selected):focus,
+body span.flatpickr-day.today:not(.selected):focus,
+body span.flatpickr-day.nextMonthDay.today:not(.selected):hover,
+body span.flatpickr-day.prevMonthDay.today:not(.selected):hover,
+body span.flatpickr-day.today:not(.selected):hover {
+  border: none;
+  background-color: #3C8DBC;
+}
+
+body .flatpickr-time .numInputWrapper span.arrowUp::after {
+  border-bottom-color: #FFFFFF;
+}
+
+body .flatpickr-time .numInputWrapper span.arrowDown::after {
+  border-top-color: #FFFFFF;
+}
+
 .text.primary,
 .text.primary:hover {
   color: #3C8DBC;

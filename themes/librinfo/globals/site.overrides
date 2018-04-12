@@ -30,6 +30,18 @@ body, * {
     }
 }
 
+body .ui.accordion .accordion .active.title .dropdown.icon,
+body .ui.accordion .active.title .dropdown.icon {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+body .ui.accordion .accordion.title .dropdown.icon,
+body .ui.accordion .title .dropdown.icon {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
 .ui.readonly,
 .field .readonly {
     pointer-events: none;

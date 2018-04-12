@@ -38,15 +38,15 @@
 
 .ui.toggle.checkbox .box::before, .ui.toggle.checkbox label::before {
 	background: @pageBackground;
-    border-color: rgba(0,0,0,0.3) !important;
-    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.3) inset !important;
+    border-color: @boxShadowColor !important;
+    box-shadow: 0 1px 2px 0 @boxShadowColor inset !important;
 }
 
 .ui.checkbox .box::before,
 .ui.checkbox label::before {
     background: @pageBackgroundDarken !important;
     border-color: @pageBackgroundDarken !important;
-    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.3) inset !important;
+    box-shadow: 0 1px 2px 0 @boxShadowColor inset !important;
 }
 
 .ui.checkbox input:checked ~ .box::after,

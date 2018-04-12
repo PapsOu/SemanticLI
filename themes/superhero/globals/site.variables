@@ -41,6 +41,7 @@
 @negativeTextColor: @textColor;
 @negativeBackgroundColor: #d9534f;
 @negativeBorderColor: transparent;
+@boxShadowColor: fade(darken(@pageBackground, 30%), 30%);
 
 @darkTextColor               : rgba(255, 255, 255, 0.9);
 @mutedTextColor              : rgba(255, 255, 255, 0.4);

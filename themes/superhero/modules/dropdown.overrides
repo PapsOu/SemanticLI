@@ -17,8 +17,8 @@
     line-height: 1.5em;
     background: @pageBackground !important;
     color: #E6ECF2 !important;
-    border-color: rgba(0,0,0,0.3) !important;
-    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.3) inset !important;
+    border-color: @boxShadowColor !important;
+    box-shadow: 0 1px 2px 0 @boxShadowColor inset !important;
     padding: .4em 2em .4em .85em !important;
     min-height: 2.61em !important;
 }
@@ -44,13 +44,13 @@
     border-top: 1px solid @primaryColor !important;
     border-left: 1px solid @primaryColor !important;
     border-right: 1px solid @primaryColor !important;
-    border-bottom: 1px solid rgba(0,0,0,0.3) !important;
+    border-bottom: 1px solid @boxShadowColor !important;
 }
 
 .ui.selection.active.dropdown .menu,
 .ui.selection.active.dropdown .menu:hover,
 .ui.selection.active.dropdown:hover .menu {
-    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.3) !important;
+    box-shadow: 0 1px 2px 0 @boxShadowColor !important;
     border-bottom: 1px solid @primaryColor !important;
     border-left: 1px solid @primaryColor !important;
     border-right: 1px solid @primaryColor !important;
@@ -71,6 +71,6 @@
 .ui.dropdown,
 .ui.floating.dropdown {
     & > .menu {
-        box-shadow: 0 1px 2px 0 rgba(0,0,0,0.3) !important;
+        box-shadow: 0 1px 2px 0 @boxShadowColor !important;
     }
 }

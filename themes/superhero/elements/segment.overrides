@@ -7,10 +7,15 @@
 
 .ui.segment,
 .ui.segments {
-    box-shadow: 0 1px 2px 0 #222;
+    box-shadow: 0 1px 2px 0 @boxShadowColor !important;
 
     &.attached {
         border    : none;
-        box-shadow: 0 1px 2px 0 #222;
+        box-shadow: 0 1px 2px 0 @boxShadowColor !important;
     }
+    &.very.basic,
+    &.basic {
+        box-shadow: none !important;
+    }
+
 }

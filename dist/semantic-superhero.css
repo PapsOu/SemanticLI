@@ -1496,8 +1496,8 @@ body.pushable .pusher {
 
 .ui.left.visible.sidebar,
 .ui.right.visible.sidebar {
-  -webkit-box-shadow: 0 1px 2px 0 #000000 !important;
-  box-shadow: 0 1px 2px 0 #000000 !important;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3) !important;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3) !important;
   z-index: 10;
 }
 
@@ -18062,15 +18062,23 @@ ol.ui.horizontal.list li:before,
 
 .ui.segment,
 .ui.segments {
-  -webkit-box-shadow: 0 1px 2px 0 #222;
-  box-shadow: 0 1px 2px 0 #222;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3) !important;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3) !important;
 }
 
 .ui.segment.attached,
 .ui.segments.attached {
   border: none;
-  -webkit-box-shadow: 0 1px 2px 0 #222;
-  box-shadow: 0 1px 2px 0 #222;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3) !important;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3) !important;
+}
+
+.ui.segment.very.basic,
+.ui.segments.very.basic,
+.ui.segment.basic,
+.ui.segments.basic {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
 }
 
 /*******************************
@@ -27954,8 +27962,8 @@ a.ui.card:hover,
   background-color: #4E5D6C;
   border: none;
   border-color: transparent;
-  -webkit-box-shadow: 0 1px 2px 0 #222 !important;
-  box-shadow: 0 1px 2px 0 #222 !important;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3) !important;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3) !important;
 }
 
 /*******************************
@@ -29930,6 +29938,12 @@ a.ui.card:hover,
 
 .ui.inverted.accordion .title:not(.ui) {
   color: rgba(255, 255, 255, 0.9);
+}
+
+.ui.styled.accordion,
+.ui.styled.accordion .accordion {
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
 }
 
 /*******************************

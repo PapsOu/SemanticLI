@@ -1,4 +1,4 @@
-@fontPath: '/bundles/blastui/fonts';
+@fontPath: '/assets/fonts';
 
 /*******************************
              Icon

@@ -1,4 +1,4 @@
-@fontPath: '/assets/fonts';
+@fontPath: '../fonts';
 
 /*******************************
              Icon

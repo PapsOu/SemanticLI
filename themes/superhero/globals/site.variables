@@ -65,8 +65,8 @@
 @inputPlaceholderColor: lighten(@gray-light, 30%);
 
 @fontName: 'Raleway';
-@fontPath: '/assets/fonts';
-@imagePath: '/assets/img';
+@fontPath: '../fonts';
+@imagePath: '../img';
 
 @red              : #DB2828;
 @orange           : #F2711C;

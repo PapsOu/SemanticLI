@@ -1510,7 +1510,7 @@ body.pushable .pusher {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 400;
-  src: local('Raleway'), local('Raleway-Regular'), url("/assets/fonts/Raleway-ext.woff2") format('woff2');
+  src: local('Raleway'), local('Raleway-Regular'), url("../fonts/Raleway-ext.woff2") format('woff2');
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
@@ -1520,7 +1520,7 @@ body.pushable .pusher {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 400;
-  src: local('Raleway'), local('Raleway-Regular'), url("/assets/fonts/Raleway.woff2") format('woff2');
+  src: local('Raleway'), local('Raleway-Regular'), url("../fonts/Raleway.woff2") format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
@@ -6199,7 +6199,7 @@ i.flag:not(.icon) {
 i.flag:not(.icon):before {
   display: inline-block;
   content: '';
-  background: url("/assets/img/flags.png") no-repeat -108px -1976px;
+  background: url("../img/flags.png") no-repeat -108px -1976px;
   width: 16px;
   height: 11px;
 }

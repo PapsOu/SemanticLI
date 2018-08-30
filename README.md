@@ -7,7 +7,7 @@ Library used to generate Semantic UI themes based on Semantic UI's default one a
 Installation is simple, execute the following script or clone SemanticUI into subfolder `semantic-ui` and install `npm packages` and `gulp`.
 
 ```bash
-git clone https://github.com/PapsOu/SemanticLI.git
+git clone https://github.com/blast-project/SemanticLI.git
 cd SemanticLI/
 ./init.sh
 ```
